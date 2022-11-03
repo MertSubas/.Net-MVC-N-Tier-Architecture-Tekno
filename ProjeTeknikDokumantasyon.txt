@@ -1,0 +1,21 @@
+             -- TEKNOROMA TEKNÝK DOKUMANTASYON --
+
+1- Proje N-tier miameri paternine göre yazýlacaktýr
+
+2- Projede acýlacak katmanlar
+ENTITIES,
+MAP,
+DAL,
+BLL,
+COMMON (Ortak kullanýlacak sýnýflarýn tutulacaðý katman),
+API (Projemizi dýsarý acmak istediðimiz icin actýgýmýz ayrý bir kaymandýr),
+OTO (API'deki esnekligimizin proje bazlý artmasý icin acacagýmýz katmandýr)
+UI
+
+3- Projedde degiþken isimleri local variable oldugu sürece camelCase, field oldugu sürece basýnda _ sembolu olmak uzere camelCase; Property, metot ve class isimleri PascalCase standartlarýnda yazýlacaktýr ve projede Türkçe karakter kullanýlmayacaktýr. Class isimleri kesýnlýkle tekil olacaktýr.
+
+4- Katman isimleri Project ile baslayacak ve . sembolunden sonra katmansal takýlarla bitecektir.
+
+5- tasarým patternlerinden generic Repository, Singletýn pattern ve Strategy pattern kesinlikle kullanacaktýr. Mevcut algoritmada bu tasarým paternlerinin dýsýnda bir baska tasarým Paterni öngörülmemektedir. Ancak projenin esnekligi buna elveriþli oldugu takdirde, projenin mimari paterniyle bir çakýþma olmadýgý durumda gerekli görülürse rahatca eklenebilmelidir.
+
+

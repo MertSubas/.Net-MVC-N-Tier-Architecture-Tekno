@@ -9,8 +9,8 @@ namespace Project.ENTITIES.Models
     public class Product:BaseEntity
     {
         public string ProductName { get; set; }
-        public short UnıtsInStock { get; set; }
-        public decimal UnıtPrice { get; set; }
+        public short UnitsInStock { get; set; }
+        public decimal UnitPrice { get; set; }
         public string ImagePath { get; set; }
         public int? CategoryID { get; set; }
         //Relational properties

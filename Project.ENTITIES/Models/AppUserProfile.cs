@@ -8,7 +8,7 @@ namespace Project.ENTITIES.Models
 {
     public class AppUserProfile:BaseEntity
     {
-        public string Firstname { get; set; }
+        public string FirstName { get; set; }
         public string LastName { get; set; }
 
         //Relational Properties

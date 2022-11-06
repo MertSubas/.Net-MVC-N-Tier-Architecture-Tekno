@@ -51,12 +51,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Designpattern\GenericRepository\BaseRepository\BaseRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\AppUserRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\CategoryRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\OrderDetailRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\OrderRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\ProductRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\ProfileRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\ShipperRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\IntRep\IRepository.cs" />
+    <Compile Include="Designpattern\Singletonpattern\DBTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.COMMON\Project.COMMON.csproj">
+      <Project>{a894e639-1b10-4b0e-bbeb-c965535eff98}</Project>
+      <Name>Project.COMMON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.DAL\Project.DAL.csproj">
+      <Project>{440bc103-5257-4b94-81ef-f48138d37603}</Project>
+      <Name>Project.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.ENTITIES\Project.ENTITIES.csproj">
+      <Project>{36a0e240-58ba-4c5a-9a09-641680029439}</Project>
+      <Name>Project.ENTITIES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

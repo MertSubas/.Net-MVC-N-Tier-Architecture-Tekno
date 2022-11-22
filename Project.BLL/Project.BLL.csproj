@@ -59,6 +59,7 @@
     <Compile Include="Designpattern\GenericRepository\ConcRep\ProductRepository.cs" />
     <Compile Include="Designpattern\GenericRepository\ConcRep\ProfileRepository.cs" />
     <Compile Include="Designpattern\GenericRepository\ConcRep\ShipperRepository.cs" />
+    <Compile Include="Designpattern\GenericRepository\ConcRep\SupplierRepository.cs" />
     <Compile Include="Designpattern\GenericRepository\IntRep\IRepository.cs" />
     <Compile Include="Designpattern\Singletonpattern\DBTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

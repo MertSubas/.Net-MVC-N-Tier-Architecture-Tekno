@@ -21,6 +21,9 @@ namespace Project.DAL.StrategyPattern
             au.Password = DantexCrypt.Crypt("123");
             au.Email = "deneme@gmail.com";
             au.Role = ENTITIES.Enums.UserRole.Admin;
+            au.Active = true;
+            context.AppUsers.Add(au);
+            context.SaveChanges();
 
             #endregion
 

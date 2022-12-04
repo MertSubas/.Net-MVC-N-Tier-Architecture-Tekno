@@ -8,6 +8,6 @@ namespace Project.MVCUI.ViewModels
 {
     public class CardPageVM
     {
-        public Cart Cart { get; set; }
+        public Card Card { get; set; }
     }
 }

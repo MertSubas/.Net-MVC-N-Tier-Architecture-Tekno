@@ -5,22 +5,22 @@ using System.Web;
 
 namespace Project.MVCUI.Models.ShoppingTools
 {
-    public class Cart
+    public class Card
     {
-        Dictionary<int, CartItem> _sepetim;
-        public Cart()
+        Dictionary<int, CardItem> _sepetim;
+        public Card()
         {
-            _sepetim = new Dictionary<int, CartItem>();
+            _sepetim = new Dictionary<int, CardItem>();
         }
 
-        public List<CartItem> Sepetim
+        public List<CardItem> Sepetim
         {
             get
             {
                 return _sepetim.Values.ToList();
             }
         }
-        public void SepeteEkle(CartItem item)
+        public void SepeteEkle(CardItem item)
         {
             if(_sepetim.ContainsKey(item.ID))
             {

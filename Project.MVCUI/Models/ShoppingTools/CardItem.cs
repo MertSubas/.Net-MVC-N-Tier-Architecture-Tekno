@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Project.MVCUI.Models.ShoppingTools
 {
-    public class CartItem
+    public class CardItem
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -19,7 +19,7 @@ namespace Project.MVCUI.Models.ShoppingTools
                 return Price * Amount; 
             }
         }
-        public CartItem()
+        public CardItem()
         {
             Amount++;
         }
